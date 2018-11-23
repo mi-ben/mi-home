@@ -11,6 +11,5 @@
 
     <ul>
         <li><a href="https://twitter.com/{{ $page->owner->twitter }}" target="_blank">Twitter</a></li>
-        <li><a href="https://github.com/{{ $page->owner->github }}" target="_blank">GitHub</a></li>
     </ul>
 @endsection

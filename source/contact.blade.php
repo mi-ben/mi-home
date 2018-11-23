@@ -3,32 +3,23 @@
 @section('title', 'Contact')
 
 @section('content')
-    <h1>Contact</h1>
+<h1>Contact</h1>
 
-    <form action="https://jumprock.co/mail/{{ $page->services->jumprock }}" method="post">
-        <div>
-            <label for="name">Name</label><br>
-            <input type="text" name="name" id="name" required>
-        </div>
-
-        <div>
-            <label for="email">Email</label><br>
-            <input type="email" name="email" id="email" required>
-        </div>
-
-        <div>
-            <label for="message">Message</label><br>
-            <textarea name="message" id="message" required></textarea>
-        </div>
-
-        <input name="subject" style="display: none;" value="Blog Contact Page">
-
-        <input type="hidden" name="after" value="{{ $page->production ? $page->baseUrl : 'http://localhost:3000' }}/contact/sent">
-
-        <input type="text" name="trapit" value="" style="display: none;">
-
-        <input type="hidden" name="replyto" value="%email">
-
-        <input type="submit" value="Send">
-    </form>
+<form name="contact" method="POST" action="/contact/sent" netlify-honeypot="bot-field" netlify>
+    <div class="hidden">
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+    </div>
+    <div>
+        <label>Name: <input type="text" name="name" /></label>
+    </div>
+    <div>
+        <label>Email: <input type="email" name="email" /></label>
+    </div>
+    <div>
+        <label>Message: <textarea name="message"></textarea></label>
+    </div>
+    <p>
+        <button type=”submit”>Send</button>
+    </p>
+</form>
 @endsection

@@ -2,22 +2,21 @@
 
 return [
     'production' => false,
-    'baseUrl' => 'https://artisan-static-demo.netlify.com',
+    'baseUrl' => 'https://measuredimprovement.com',
     'site' => [
-        'title' => 'My Jigsaw Blog',
+        'title' => 'Measured Improvement',
         'description' => 'Personal blog of John Doe.',
-        'image' => 'default-share.png',
+        'image' => 'mi_logo.png',
     ],
     'owner' => [
-        'name' => 'John Doe',
-        'twitter' => 'johndoe',
-        'github' => 'johndoe',
+        'name' => 'Measured Improvement',
+        'twitter' => 'Measure_Improve',
     ],
     'services' => [
-        'analytics' => 'UA-XXXXX-Y',
+        'analytics' => 'UA-100402971-1',
         'disqus' => 'artisanstatic',
-        'cloudinary' => 'artisanstatic',
-        'jumprock' => 'artisanstatic',
+        'cloudinary' => 'measured-improvement',
+        // 'jumprock' => 'artisanstatic',
     ],
     'collections' => [
         'posts' => [
