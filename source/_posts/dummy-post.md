@@ -3,10 +3,10 @@ title: '01 - Dummy Post'
 date: 2017-09-24
 tags:
   - css
-  - javascript
   - php
   - laravel
 image: sample.jpg
+teaser: "Examples of everything you'll need in a post."
 ---
 ## Heading 2
 

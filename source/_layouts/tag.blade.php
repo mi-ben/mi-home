@@ -2,7 +2,7 @@
 
 @section('title', "Posts tagged '{$page->name()}'")
 
-@section('content')
+@section('layout')
     <h1>Posts tagged '{{ $page->name() }}'</h1>
 
     <ul>

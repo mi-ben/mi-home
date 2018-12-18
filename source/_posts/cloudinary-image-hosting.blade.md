@@ -2,6 +2,7 @@
 title: '05 - Cloudinary Image Hosting'
 date: 2018-08-31
 image: mi_logo.png
+teaser: "Cloudinary, the legendary image hosting provider. Find out how to recruit them to work for your site."
 comments: false
 ---
 Register on [Cloudinary](https://cloudinary.com/invites/lpov9zyyucivvxsnalc5/qq2slabgpy590znlop4j).

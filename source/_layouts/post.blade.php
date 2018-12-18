@@ -1,38 +1,35 @@
-@extends('_layouts.master')
+@extends('_layouts.secondary-right-column')
 
 @section('title', $page->title)
 
-@section('content')
-    <h1>{{ $page->title }}</h1>
+@section('middle-column')
 
-    {{-- I know inline CSS isn't good, but this is just a template so you should change everything anyway --}}
-    @if ($page->image)
-        <img src="{{ $page->imageCdn($page->image) }}" style="object-fit: cover; height: 250px; width: 100%;">
-    @endif
+<div class="border p-4 bg-white shadow rounded-lg mb-8 overflow-hidden">
+    <div class="flex items-stretch mb-4">
+        <img src="{{ $page->imageCdn($page->image) }}" class="w-64 h-48 rounded-lg border-b border-l shadow">
 
-    <p>
-        <strong>{{ date('F j, Y', $page->date) }}</strong><br>
-        @foreach ($page->tags as $tag)
-            <a href="/tags/{{ $tag }}">{{ $tag }}</a>
-            {{ $loop->last ? '' : '-' }}
-        @endforeach
-    </p>
+        <div class="ml-4 flex-1 flex relative">
+            <div class="flex-1 self-center">
+                 <h1 class="uppercase text-3xl pb-2">{{ $page->title }}</h1>
 
-    <blockquote data-phpdate="{{ $page->date }}">
-        <em>WARNING: This post is over a year old. Some of the information this contains may be outdated.</em>
-    </blockquote>
+                <div class="flex items-center justify-between pb-4">
+                    <p class="text-grey-dark font-thin text-sm">{{ date('M j, Y', $page->date) }}</p>
+                    <div>
+                        @foreach ($page->tags as $tag)
+                        <a href="/tags/{{ $tag }}" class="rounded-full bg-grey-lighter text-grey-darker px-4 py-1 mx-1 no-underline uppercase text-xs">{{ $tag }}</a>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            <i class="far fa-chevron-circle-down fa-lg absolute pin-x pin-b mx-auto mb-2"></i>
+        </div>
 
-    <hr>
 
-    <p>DISCLAIMER: Any 3rd-party services in these posts and in the config are only recommendations/suggestions. I am not affiliated with any of them.</p>
+    </div>
+
 
     @yield('postContent')
 
-    <hr>
+</div>
 
-    @if ($page->comments)
-        @include('_partials.comments')
-    @else
-        <p>Comments are not enabled for this post.</p>
-    @endif
 @endsection

@@ -1,5 +1,6 @@
 import 'sharer.js';
 import './highlight';
+import './fontawesome/all.min';
 
 const clickMe = document.querySelector('.test-js');
 

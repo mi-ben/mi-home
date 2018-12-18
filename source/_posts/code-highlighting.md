@@ -1,8 +1,8 @@
 ---
 title: '07 - Code Highlighting'
 date: 2018-08-31
-image: code.jpg
-comments: false
+image: mi_logo.png
+teaser: 'Below are some examples of code blocks with syntax highlighting.'
 ---
 Below are some examples of code blocks with syntax highlighting.
 

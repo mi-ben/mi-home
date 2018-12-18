@@ -14,7 +14,7 @@ return [
     ],
     'services' => [
         'analytics' => 'UA-100402971-1',
-        'disqus' => 'artisanstatic',
+        // 'disqus' => 'artisanstatic',
         'cloudinary' => 'measured-improvement',
         // 'jumprock' => 'artisanstatic',
     ],
