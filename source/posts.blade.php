@@ -29,3 +29,15 @@
         <p>No posts to show.</p>
     @endforelse
 @endsection
+
+@section('right-column')
+        <div class="shadow-inner bg-grey-lighter rounded-lg p-4">
+            <h3>Newsletter sign-up</h3>
+            <form name="newsletter" method="POST" action="/welcome" netlify-honeypot="spammer-slammer" netlify>
+                <span class="hidden"><input type="spammer-slammer"></span>
+                <input type="text" name="name" class="rounded-lg p-3 my-1 w-full text-xs" placeholder="Name">
+                <input type="email" name="email" class="rounded-lg p-3 my-1 w-full text-xs" placeholder="Email">
+                <button type="submit" class="rounded-lg p-3 my-1 w-full text-xs uppercase bg-grey-dark text-white font-extrabold">Join the tribe</button>
+            </form>
+        </form>
+@endsection
