@@ -2,8 +2,8 @@
 
 @tailwind components;
 
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Open+Sans|Roboto');
-@import "~highlight.js/styles/atom-one-dark";
+@import url('https://fonts.googleapis.com/css?family=Damion|Merriweather|Open+Sans');
+@import "~highlight.js/styles/github";
 
 html, body {
     background-color: #fcfcfc;
@@ -11,12 +11,38 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    @apply font-headline;
+    @apply font-serif;
+}
+
+pre, code {
+    white-space: pre;
+    overflow-x: scroll;
+}
+
+.hljs {
+    overflow-x: scroll;
+    @apply p-4 text-sm;
 }
 
 .personal {
     @apply font-serif italic;
 }
+
+.content > h1, h2, h3, h4, h5, h6 {
+    @apply mt-6 mb-2;
+}
+
+.content > p {
+    @apply mb-6 text-lg relative;
+}
+
+.content .note {
+    right: -11rem;
+    max-width: 9rem;
+    @apply absolute pin-t text-xs font-serif;
+}
+
+
 
 @tailwind utilities;
 

@@ -4,9 +4,8 @@ return [
     'production' => false,
     'baseUrl' => 'https://measuredimprovement.com',
     'site' => [
-        'title' => 'Measured Improvement',
-        'description' => 'Personal blog of John Doe.',
-        'image' => 'mi_logo.png',
+        'title' => 'Benjamin A. Wilson',
+        'description' => 'Discover ... Develop ... Report',
     ],
     'owner' => [
         'name' => 'Measured Improvement',
@@ -19,8 +18,44 @@ return [
         // 'jumprock' => 'artisanstatic',
     ],
     'collections' => [
-        'posts' => [
-            'path' => 'posts/{filename}',
+        'articles' => [
+            'path' => 'articles/{filename}',
+            'sort' => '-date',
+            'extends' => '_layouts.post',
+            'section' => 'postContent',
+            'isPost' => true,
+            'comments' => true,
+            'tags' => [],
+        ],
+        'journal' => [
+            'path' => 'journal/{filename}',
+            'sort' => '-date',
+            'extends' => '_layouts.post',
+            'section' => 'postContent',
+            'isPost' => true,
+            'comments' => true,
+            'tags' => [],
+        ],
+        'models' => [
+            'path' => 'models/{filename}',
+            'sort' => '-date',
+            'extends' => '_layouts.post',
+            'section' => 'postContent',
+            'isPost' => true,
+            'comments' => true,
+            'tags' => [],
+        ],
+        'notes' => [
+            'path' => 'notes/{filename}',
+            'sort' => '-date',
+            'extends' => '_layouts.post',
+            'section' => 'postContent',
+            'isPost' => true,
+            'comments' => true,
+            'tags' => [],
+        ],
+        'projects' => [
+            'path' => 'projects/{filename}',
             'sort' => '-date',
             'extends' => '_layouts.post',
             'section' => 'postContent',

@@ -231,6 +231,7 @@ module.exports = {
       'monospace',
     ],
     'headline': [
+      'Damion',
       'Roboto',
       'system-ui',
       'BlinkMacSystemFont',
@@ -575,6 +576,7 @@ module.exports = {
 
   minWidth: {
     '0': '0',
+    '64': '64rem',
     'full': '100%',
   },
 

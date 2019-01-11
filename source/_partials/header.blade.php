@@ -1,13 +1,18 @@
-<header class="container mx-auto border-b my-6">
-    <nav class="flex pb-4">
+<header class="border-b my-6">
+    <nav class="pb-4">
         <a href="/" class="no-underline text-black">
-            <img src="{{ $page->imageCdn("mi_logo.png") }}" alt="Measure Improvement Logo" class="w-12">
-            <strong>{{ $page->site->title }}</strong><br>
+            <h1 class="font-headline pb-2">{{ $page->site->title }}</h1>
         </a>
-        <div class="flex flex-1 items-end justify-end -mr-4">
-            <a class="no-underline text-grey-darker hover:text-grey-darkest mx-4" href="/posts">Posts</a>
-            <a class="no-underline text-grey-darker hover:text-grey-darkest mx-4" href="/about">About</a>
-            <a class="no-underline text-grey-darker hover:text-grey-darkest mx-4" href="/contact">Contact</a>
+        <div class="uppercase flex justify-between items-center">
+            <p class="italic font-serif text-grey-darker text-xs">Discover ... Develop ... Report</p>
+            <div class="-mr-4">
+                <a class="no-underline text-xs {{ str_contains($page->_meta->path, "journal") ? "text-grey-darkest" : "text-grey-darker" }} hover:text-grey-darkest mx-4" href="/journal">Journal</a>
+                <a class="no-underline text-xs {{ str_contains($page->_meta->path, "notes") ? "text-grey-darkest" : "text-grey-darker" }} hover:text-grey-darkest mx-4" href="/notes">Notes</a>
+                <a class="no-underline text-xs {{ str_contains($page->_meta->path, "articles") ? "text-grey-darkest" : "text-grey-darker" }} hover:text-grey-darkest mx-4" href="/articles">Articles</a>
+                <a class="no-underline text-xs {{ str_contains($page->_meta->path, "models") ? "text-grey-darkest" : "text-grey-darker" }} hover:text-grey-darkest mx-4" href="/models">Models</a>
+                <a class="no-underline text-xs {{ str_contains($page->_meta->path, "projects") ? "text-grey-darkest" : "text-grey-darker" }} hover:text-grey-darkest mx-4" href="/projects">Projects</a>
+            </div>
         </div>
     </nav>
+
 </header>

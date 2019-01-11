@@ -9,7 +9,7 @@ hljs.registerLanguage('php', require('highlight.js/lib/languages/php'));
 hljs.registerLanguage('apache', require('highlight.js/lib/languages/apache'));
 hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
 hljs.registerLanguage('markdown', require('highlight.js/lib/languages/markdown'));
-hljs.registerLanguage('handlebars', require('highlight.js/lib/languages/handlebars'));
+// hljs.registerLanguage('handlebars', require('highlight.js/lib/languages/handlebars'));
 hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
 hljs.registerLanguage('shell', require('highlight.js/lib/languages/shell'));
 

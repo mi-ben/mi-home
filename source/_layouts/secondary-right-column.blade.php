@@ -2,15 +2,13 @@
 
 @section('layout')
 
-    <div class="container mx-auto">
-        <div class="flex -mx-2">
-            <div class="mx-2 flex-1">
-                @yield('middle-column')
-            </div>
+    <div class="flex -mx-2">
+        <div class="mx-2 flex-grow">
+            @yield('middle-column')
+        </div>
 
-            <div class="mx-2 w-64">
-                @yield('right-column')
-            </div>
+        <div class="mx-2 w-64 flex-no-shrink">
+            @yield('right-column')
         </div>
     </div>
 

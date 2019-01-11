@@ -17,11 +17,14 @@
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 </head>
 <body>
-    @include('_partials.header')
+    <div class="container mx-auto max-w-lg">
+        @include('_partials.header')
 
-    @yield('layout')
+        @yield('layout')
 
-    @include('_partials.footer')
+        @include('_partials.footer')
+    </div>
+
 
     <script src="{{ mix('js/main.js', 'assets/build') }}"></script>
     @includeWhen($page->production, '_partials.analytics')

@@ -5,10 +5,66 @@ backend:
 publish_mode: editorial_workflow
 media_folder: images # required but unused, host images externally
 collections:
-  - name: "posts"
-    label: "Posts"
-    label_singular: "Post"
-    folder: "source/_posts"
+  - name: "articles"
+    label: "Articles"
+    label_singular: "Article"
+    folder: "source/_articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", default: "Title"}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Image Filename", name: "image", widget: "string", required: false}
+      - {label: "Teaser", name: "teaser", widget: "string", required: false}
+      - {label: "Comments", name: "comments", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "journal"
+    label: "Journal"
+    label_singular: "Journal Entry"
+    folder: "source/_journal"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", default: "Title"}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Image Filename", name: "image", widget: "string", required: false}
+      - {label: "Teaser", name: "teaser", widget: "string", required: false}
+      - {label: "Comments", name: "comments", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "models"
+    label: "Models"
+    label_singular: "Model"
+    folder: "source/_models"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", default: "Title"}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Image Filename", name: "image", widget: "string", required: false}
+      - {label: "Teaser", name: "teaser", widget: "string", required: false}
+      - {label: "Comments", name: "comments", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "notes"
+    label: "Notes"
+    label_singular: "Note"
+    folder: "source/_notes"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string", default: "Title"}
+      - {label: "Date", name: "date", widget: "date"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+      - {label: "Image Filename", name: "image", widget: "string", required: false}
+      - {label: "Teaser", name: "teaser", widget: "string", required: false}
+      - {label: "Comments", name: "comments", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project"
+    folder: "source/_projects"
     create: true
     slug: "{{slug}}"
     fields:
