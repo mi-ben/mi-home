@@ -14,7 +14,6 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string", default: "Title"}
       - {label: "Date", name: "date", widget: "date"}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Image Filename", name: "image", widget: "string", required: false}
       - {label: "Teaser", name: "teaser", widget: "string", required: false}
       - {label: "Comments", name: "comments", widget: "boolean", default: false}
@@ -28,7 +27,6 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string", default: "Title"}
       - {label: "Date", name: "date", widget: "date"}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Image Filename", name: "image", widget: "string", required: false}
       - {label: "Teaser", name: "teaser", widget: "string", required: false}
       - {label: "Comments", name: "comments", widget: "boolean", default: false}
@@ -42,7 +40,6 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string", default: "Title"}
       - {label: "Date", name: "date", widget: "date"}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Image Filename", name: "image", widget: "string", required: false}
       - {label: "Teaser", name: "teaser", widget: "string", required: false}
       - {label: "Comments", name: "comments", widget: "boolean", default: false}
@@ -56,7 +53,6 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string", default: "Title"}
       - {label: "Date", name: "date", widget: "date"}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Image Filename", name: "image", widget: "string", required: false}
       - {label: "Teaser", name: "teaser", widget: "string", required: false}
       - {label: "Comments", name: "comments", widget: "boolean", default: false}
@@ -70,7 +66,6 @@ collections:
     fields:
       - {label: "Title", name: "title", widget: "string", default: "Title"}
       - {label: "Date", name: "date", widget: "date"}
-      - {label: "Tags", name: "tags", widget: "list", required: false}
       - {label: "Image Filename", name: "image", widget: "string", required: false}
       - {label: "Teaser", name: "teaser", widget: "string", required: false}
       - {label: "Comments", name: "comments", widget: "boolean", default: false}

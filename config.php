@@ -63,14 +63,6 @@ return [
             'comments' => true,
             'tags' => [],
         ],
-        'tags' => [
-            'path' => 'tags/{filename}',
-            'extends' => '_layouts.tag',
-            'section' => '',
-            'name' => function ($page) {
-                return $page->getFilename();
-            },
-        ],
     ],
     'excerpt' => function ($page, $limit = 250, $end = '...') {
         return $page->isPost
