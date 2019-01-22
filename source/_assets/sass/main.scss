@@ -33,17 +33,13 @@ pre, code {
 }
 
 .content > p {
-    @apply mb-6 text-lg relative;
+    @apply mb-6 text-lg relative leading-normal;
 }
 
 .content .note {
     right: -11rem;
     max-width: 9rem;
     @apply absolute pin-t text-xs font-serif;
-}
-
-.icon-* {
-    @apply my-auto;
 }
 
 

@@ -3,8 +3,10 @@
 @section('main-content')
     {{-- What --}}
     <div>
-        <h1>Welcome to Benjamin A. Wilson's Personal Site</h1>
-        <p class="italic">A bit about what you can expect here.</p>
+        <h1 class="text-center uppercase text-4xl">The Personal Home of <br> Curiosity Driven R&amp;D</h1>
+        <p>Welcome! I'm <em>Benjamin A. Wilson</em> when I want to sound smart, but please, call me <em>Ben</em>.</p>
+        <p>Thoughts to digits to people.</p>
+        <p>Through exploration and experimentation, I'm working to bring you models of what technology and data is making possible today.</p>
     </div>
 
 
@@ -16,8 +18,8 @@
     </div>
 
     {{-- How --}}
-    <div class="max-w-sm mx-auto text-center content">
-        <h2>My Process</h2>
+    <div class="max-w-sm mx-auto content">
+        <h2 class="text-center uppercase">My Process</h2>
         <p>I've found a 5-step process that works for me. It'll change and improve as we go through the process together.</p>
         <p>Here's a quick walk-through the process, so you can find the most interesting part of the site for you.</p>
     </div>
@@ -37,7 +39,7 @@
     <div class="ml-auto mr-4 my-8 max-w-md flex shadow">
         <div class="bg-grey-light flex-1 p-6">
             <h3 class="mb-2">Step 2 - Notes</h3>
-            <p>Things are still messy here. This is when my head is still in the proverbial "clouds". You can expect some random throughout.</p>
+            <p>Things are still messy here. This is when my head is still in the proverbial <em>"clouds"</em>. You can expect some random thoughts throughout.</p>
         </div>
         <div class="p-6 bg-grey w-1/5">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-clouds"><path class="secondary" d="M16.85 6.06A3.52 3.52 0 0 1 21 9.5a3.5 3.5 0 0 1-6.96.5H14a3 3 0 1 1 2.85-3.94z"/><path class="primary" d="M5.03 12.12A5.5 5.5 0 0 1 16 11.26 4.5 4.5 0 1 1 17.5 20H6a4 4 0 0 1-.97-7.88z"/></svg>
@@ -59,7 +61,7 @@
     <div class="ml-auto mr-4 my-8 max-w-md flex shadow">
         <div class="bg-grey-light flex-1 p-6">
             <h3 class="mb-2">Step 4 - Models</h3>
-            <p>Models make up our digitized concept.</p>
+            <p>Models are where we transition from conceptual and written, to functional and physical. This digitization is key to unlocking new growth oppotuntities. My hope is they can be the building blocks for your projects.</p>
         </div>
         <div class="p-6 bg-grey w-1/5">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-brick"><path class="primary" d="M3 6l9 4v12l-9-4V6zm14-3v2c0 1.1-2.24 2-5 2s-5-.9-5-2V3c0 1.1 2.24 2 5 2s5-.9 5-2z"/><polygon class="secondary" points="21 6 12 10 12 22 21 18"/></svg>
@@ -73,13 +75,13 @@
         </div>
         <div class="bg-grey-light flex-1 p-6">
             <h3 class="mb-2">Step 5 - Projects</h3>
-            <p>Our random thoughts are starting to click! I'll take some time to explain concepts clearly <span class="italic small">(hopefull)</span>, before creating a tech-enabled version.</p>
+            <p>The vision may not be clear at the start, but I expect some of these models to come together nicely. So nicely in fact, that it may inspire the creation of a long-lasting multi-faceted project.</p>
         </div>
     </div>
 
 
     {{-- Who --}}
-    <h2>About Me</h2>
+    <h2 class="text-center uppercase">My-self</h2>
     <img src="{{ $page->imageCdn("Sorrento_Wide.jpg") }}" alt="Ben Wilson" class="shadow-lg my-8">
     <ul>
         <li>Professionally: Developer, Analyst</li>
@@ -87,6 +89,11 @@
         <li>Personal: Cornhole, Taco Afficianado</li>
     </ul>
 
-    <h2>Get in Touch</h2>
-    <p class="italic">Email is the best to get in touch.</p>
+    <div class="content my-8 mx-auto max-w-md">
+        <h2 class="uppercase text-center">It takes a village</h2>
+        <p>So far there has been a lot of "I" and "me". Hopefully you noticed some of the "ours" and "we". Those are intentional. This is a journey together. I could not do this without the help and support of my family, friends, colleagues, and generous strangers that have shared their thoughts.</p>
+        <p>Whether you'd like to dive into detail, provide some critical feedback, or bounce an idea off me, I would love to hear from you. I enjoy helping out and will respond to as many messages as I can, time permitting.</p>
+        <p>Take a look at how we can best <a href="/connect">connect</a>.</p>
+    </div>
+
 @endsection
