@@ -32,7 +32,7 @@ pre, code {
     @apply mt-6 mb-2;
 }
 
-.content > p {
+.content > p, .content > ul {
     @apply mb-6 text-lg relative leading-normal;
 }
 
@@ -40,6 +40,18 @@ pre, code {
     right: -11rem;
     max-width: 9rem;
     @apply absolute pin-t text-xs font-serif;
+}
+
+svg[class^="icon-"] {
+    @apply block flex-1;
+
+    & .primary {
+        @apply fill-current text-grey-darkest;
+    }
+
+    & .secondary {
+        @apply fill-current text-grey-light;
+    }
 }
 
 

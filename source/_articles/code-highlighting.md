@@ -8,7 +8,7 @@ Below are some examples of code blocks with syntax highlighting.
 
 Go to `source/_assets/js/highlight.js` to view/change the registered languages.
 
-Go to `source/_assets/sass/main.scss` to change the theme.
+Go to `source/_assets/sass/main.scss` to change the theme. <span class="note">This is a side comment.</span>
 
 ## HTML (and XML)
 
