@@ -16,16 +16,27 @@
 </div>
 <div class="max-w-md mx-auto">
     <div class="content">
-        <p>Welcome! I'm <em>Benjamin A. Wilson</em> when I want to sound smart, but please, call me <em>Ben</em>.</p>
-        <p>Thoughts to digits to people.</p>
-        <p>Through exploration and experimentation, I'm working to bring you models of what technology and data is making possible today.</p>
-        <p>The three tennants of our research</p>
-        <ul>
-            <li>Helpful</li>
-            <li>Digital</li>
-            <li>Teachable</li>
+        <p>Hi, I'm Ben, and I've always been a curious person. This curiosity is going to take us to some fun and interesting places... <em>at least I find them fun.</em></p>
+        <p>With everything I put on here, I strive to hit <strong>3 requirements</strong>.</p>
+        <ul class="fa-ul mx-auto max-w-sm">
+            <li class="mb-8 pl-4">
+                <span class="fa-li"><i class="fal fa-lg fa-hands-helping"></i></span>
+                <h4 class="pb-2">Helpful</h4>
+                <p class="text-sm leading-loose">I'll always keep a close eye on the purpose of the research. If the work is not moving towards solving a tangible problem, then it's not incredibly useful. I'll always keep the audience and others in mind.</p>
+            </li>
+            <li class="mb-8 pl-4">
+                <span class="fa-li"><i class="fal fa-lg fa-laptop-code"></i></span>
+                <h4 class="pb-2">Digital</h4>
+                <p class="text-sm leading-loose">Bringing something into the digital world all the sudden unlocks a whole new set of capabilities. Digitizing the concepts that we explore will allow others to update and build upon it.</p>
+            </li>
+            <li class="mb-8 pl-4">
+                <span class="fa-li"><i class="fal fa-lg fa-chalkboard-teacher"></i></span>
+                <h4 class="pb-2">Teachable</h4>
+                <p class="text-sm leading-loose">I want you to be able to replicate my results, apply it to your own situation, and use it as a stepping stone. Everything I'm sharing is a culmination of others work, both currently and historically. This research can be the next step up.</p>
+            </li>
         </ul>
-        <p>Areas of Interest:</p>
+        <p>So what topics might we explore? What could we possibly build?</p>
+        <p>Here are a few areas I plan to explore in-depth:</p>
     </div>
 </div>
 
@@ -68,25 +79,19 @@
         </div>
         <div class="ml-2 my-auto text-xs uppercase leading-normal">
             <p>IoT</p>
-            <p>Edge Devices</p>
+            <p>Digital Twins</p>
         </div>
     </div>
 
 </div>
 
-
 <div class="content max-w-md mx-auto">
-    <p>
-        If those sound like large general topics, well... they are! <br>
-        and before it's all said and done, my curiosity will force me to add more.
-    </p>
-    <p>Do not worry, we have plenty of time. That is why I am making a <strong>100 Quarter Commitment</strong>.</p>
+    <p>If those sound like large general topics, well... they are!</p>
+    <p>No worries though, we have plenty of time. That is why I am making a <strong>100 Quarter Commitment</strong>.</p>
 </div>
 
-
-
 <div class="my-16 bg-white shadow-lg p-8">
-    <h2>100-Q Committment</h2>
+    <h2>100 Quarter Committment</h2>
     <p>It's no secret that all good things take time. That is why I'm making a long-term committment to you all.</p>
     <p class="italic">A committment to exploring, learning, developing, and applying. Random thoughts expected.</p>
 </div>
@@ -94,8 +99,8 @@
 {{-- How --}}
 <div class="max-w-sm mx-auto content">
     <h2 class="text-center uppercase">My Process</h2>
-    <p>I've found a 5-step process that works for me. It'll change and improve as we go through the process together.</p>
-    <p>Here's a quick walk-through the process, so you can find the most interesting part of the site for you.</p>
+    <p>Even with 25 years to explore such a broad space, it may seem like a lot to fit into a quarter. That's why I've worked out a 5-step process for our R&D goals.</p>
+    <p>I've even structured the website around this process. <br>So let take a quick walk-through.</p>
 </div>
 
 {{-- Articles / Light --}}
