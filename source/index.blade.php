@@ -87,20 +87,24 @@
 
 <div class="content max-w-md mx-auto">
     <p>If those sound like large general topics, well... they are!</p>
-    <p>No worries though, we have plenty of time. That is why I am making a <strong>100 Quarter Commitment</strong>.</p>
+    <p>No worries though, we have plenty of time. That is why I am making a <br><strong>100 Quarter Commitment</strong>.</p>
 </div>
 
-<div class="my-16 bg-white shadow-lg p-8">
-    <h2>100 Quarter Committment</h2>
-    <p>It's no secret that all good things take time. That is why I'm making a long-term committment to you all.</p>
-    <p class="italic">A committment to exploring, learning, developing, and applying. Random thoughts expected.</p>
+<div class="my-16 mx-4 bg-white shadow-lg p-8">
+    <h2 class="mb-2">My 100 Quarter Committment</h2>
+    <p class="text-grey-dark font-thin text-sm mb-4">{{ date('M j, Y', strtotime('01/31/2019')) }}</p>
+    <div class="content">
+        <p>It's no secret that all good things take time. That is why I'm making a long-term committment to you all.</p>
+        <p class="italic">A committment to exploring, learning, developing, and applying. Random thoughts expected.</p>
+    </div>
+    <p class="border-b w-1/4 ml-auto p-0 text-grey-dark">x<span class="pl-2 font-headline text-2xl text-black">Ben W.</span></p>
 </div>
 
 {{-- How --}}
 <div class="max-w-sm mx-auto content">
-    <h2 class="text-center uppercase">My Process</h2>
+    {{-- <h2 class="text-center uppercase">My Process</h2> --}}
     <p>Even with 25 years to explore such a broad space, it may seem like a lot to fit into a quarter. That's why I've worked out a 5-step process for our R&D goals.</p>
-    <p>I've even structured the website around this process. <br>So let take a quick walk-through.</p>
+    <p>I've even structured the website around this process. <br>So, let's take a quick walk-through.</p>
 </div>
 
 {{-- Articles / Light --}}
@@ -110,7 +114,7 @@
     </div>
     <div class="bg-grey-light flex-1 p-6">
         <h3 class="mb-2">Step 1 - Journal</h3>
-        <p>I'm not good enough to plan out 100 steps into the future, so the Journal will be our map. I'll lay out our goal for the quarter ahead, and reflections from the past 90 daysThe goals ahead of us, reflections on the path behind us.</p>
+        <p class="leading-normal">You're supposed to <em>begin with the end in mind</em>. Well, I'm no grand chess master that can see 100 steps ahead. So, we will take it one step at a time in the Journal. There I'll set the goals ahead of us and reflect on the path behind us.</p>
     </div>
 </div>
 
@@ -118,7 +122,7 @@
 <div class="ml-auto mr-4 my-8 max-w-md flex shadow">
     <div class="bg-grey-light flex-1 p-6">
         <h3 class="mb-2">Step 2 - Notes</h3>
-        <p>Things are still messy here. This is when my head is still in the proverbial <em>"clouds"</em>. You can expect some random thoughts throughout.</p>
+        <p class="leading-normal">Things are still messy here. This is when my head is still in the proverbial <em>"clouds"</em>. This will grow into a nice knowledge base of links, definitions, and a few random thoughts.</p>
     </div>
     <div class="p-6 bg-grey w-1/5 flex">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-clouds"><path class="secondary" d="M16.85 6.06A3.52 3.52 0 0 1 21 9.5a3.5 3.5 0 0 1-6.96.5H14a3 3 0 1 1 2.85-3.94z"/><path class="primary" d="M5.03 12.12A5.5 5.5 0 0 1 16 11.26 4.5 4.5 0 1 1 17.5 20H6a4 4 0 0 1-.97-7.88z"/></svg>
@@ -132,7 +136,7 @@
     </div>
     <div class="bg-grey-light flex-1 p-6">
         <h3 class="mb-2">Step 3 - Articles</h3>
-        <p>Our random thoughts are starting to click! I'll take some time to explain concepts clearly <span class="italic small">(hopefull)</span>, before creating a tech-enabled version.</p>
+        <p class="leading-normal">Our random thoughts are starting to click! I'll take some time to explain concepts clearly <span class="italic small">(hopefully)</span>, before creating a tech-enabled version.</p>
     </div>
 </div>
 
@@ -140,7 +144,7 @@
 <div class="ml-auto mr-4 my-8 max-w-md flex shadow">
     <div class="bg-grey-light flex-1 p-6">
         <h3 class="mb-2">Step 4 - Models</h3>
-        <p>Models are where we transition from conceptual and written, to functional and physical. This digitization is key to unlocking new growth oppotuntities. My hope is they can be the building blocks for your projects.</p>
+        <p class="leading-normal">Models are where we transition from conceptual and written, to functional and physical. This digitization is key to unlocking new growth oppotuntities. My hope is they can be the building blocks for your own projects.</p>
     </div>
     <div class="p-6 bg-grey w-1/5 flex">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-brick"><path class="primary" d="M3 6l9 4v12l-9-4V6zm14-3v2c0 1.1-2.24 2-5 2s-5-.9-5-2V3c0 1.1 2.24 2 5 2s5-.9 5-2z"/><polygon class="secondary" points="21 6 12 10 12 22 21 18"/></svg>
@@ -154,14 +158,14 @@
     </div>
     <div class="bg-grey-light flex-1 p-6">
         <h3 class="mb-2">Step 5 - Projects</h3>
-        <p>The vision may not be clear at the start, but I expect some of these models to come together nicely. So nicely in fact, that it may inspire the creation of a long-lasting multi-faceted project.</p>
+        <p class="leading-normal">The vision may not be clear at the start, but I expect over time some of these models will come together nicely. So nicely in fact, that it may inspire the creation of a long-lasting multi-faceted project.</p>
     </div>
 </div>
 
 
 {{-- Who --}}
 <h2 class="text-center uppercase">My-self</h2>
-<img src="{{ $page->imageCdn("Sorrento_Wide.jpg") }}" alt="Ben Wilson" class="shadow-lg my-8">
+<img src="{{ $page->imageCdn("Sorrento_Wide.jpg") }}" alt="Ben Wilson" class="shadow-lg my-8 mx-4">
 <div class="content my-8 mx-auto max-w-md">
 
     <p>Since I was 18 I have felt like I was searching for what I was supposed to do to help others, make a living, and hopefully make a positive impact on my community. I went to a liberal arts university to learn about a wide array of topics. I did not declare a major until my junior year, just because I was forced to in order to graduate on time. I chose computer science, not because memorizing Big O notation for different sorting algorithms was so much fun, but because I loved finding the interesting intersections between computers and other disciplines!</p>
