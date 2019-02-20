@@ -3,7 +3,9 @@
 @section('title', 'Notes')
 
 @section('main-content')
-    <h1>Notes</h1>
+<div class="max-w-md">
+    <h1 class="mb-4">Notes</h1>
+    <p class="leading-normal text-grey-darker mb-8">Things are still messy here. This is when my head is still in the proverbial <em>"clouds"</em>. Treat this as a nice knowledge base of links, definitions, and a few random thoughts.</p>
 
     @forelse ($notes->sortBy('-date') as $note)
 
@@ -16,4 +18,5 @@
     @empty
         <p>No notes to show.</p>
     @endforelse
+</div>
 @endsection

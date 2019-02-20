@@ -94,8 +94,16 @@
     <h2 class="mb-2">My 100 Quarter Committment</h2>
     <p class="text-grey-dark font-thin text-sm mb-4">{{ date('M j, Y', strtotime('01/31/2019')) }}</p>
     <div class="content">
-        <p>It's no secret that all good things take time. That is why I'm making a long-term committment to you all.</p>
-        <p class="italic">A committment to exploring, learning, developing, and applying. Random thoughts expected.</p>
+        <p>I believe in the compounding capabilities of individual ingenuity and collaboration through the use of technology.</p>
+        <p>The compounding returns have been building up for centuries and that trend will continue, certainly for the next 25 years.</p>
+        <p>When you are able to apply technology effectively, you grow in three way:</p>
+        <ul>
+            <li>Personal Growth - through increased capabilities</li>
+            <li>Organizational Growth - through increased efficencies</li>
+            <li>Community Growth - through increased service to others</li>
+        </ul>
+        <p>It is this belief in leveraging technology to do more good and the unending growth opportunity ahead, that gives me the courage to commit 100 quarters to delivering models of what is possible today.</p>
+        <p>My hope is that as these works unfold, they will inspire, guide, or spark your own growth.</p>
     </div>
     <p class="border-b w-1/4 ml-auto p-0 text-grey-dark">x<span class="pl-2 font-headline text-2xl text-black">Ben W.</span></p>
 </div>
@@ -162,27 +170,24 @@
     </div>
 </div>
 
-
-{{-- Who --}}
-<h2 class="text-center uppercase">My-self</h2>
-<img src="{{ $page->imageCdn("Sorrento_Wide.jpg") }}" alt="Ben Wilson" class="shadow-lg my-8 mx-4">
-<div class="content my-8 mx-auto max-w-md">
-
-    <p>Since I was 18 I have felt like I was searching for what I was supposed to do to help others, make a living, and hopefully make a positive impact on my community. I went to a liberal arts university to learn about a wide array of topics. I did not declare a major until my junior year, just because I was forced to in order to graduate on time. I chose computer science, not because memorizing Big O notation for different sorting algorithms was so much fun, but because I loved finding the interesting intersections between computers and other disciplines!</p>
-    <p>After college I've had a lot of different roles...</p>
-    <ul>
-        <li>Professionally: Developer, Analyst</li>
-        <li>Semi-Pro: Designer, Marketer</li>
-        <li>Personal: Cornhole, Taco Afficianado</li>
-    </ul>
-    <p>Finally, I began to think, maybe it's not the topic but the process of learning that I love.</p>
-    <p>If my one specialty emerges during this 25-year period, then that's a win. If it doesn't, I'll be really good at exploring new avenues!</p>
-
-    {{-- Connect --}}
-    <h2 class="uppercase text-center">It takes a village</h2>
-    <p>So far there has been a lot of "I" and "me". Hopefully you noticed some of the "ours" and "we". Those are intentional. This is a journey together. I could not do this without the help and support of my family, friends, colleagues, and generous strangers that have shared their thoughts.</p>
-    <p>Whether you'd like to dive into detail, provide some critical feedback, or bounce an idea off me, I would love to hear from you. I enjoy helping out and will respond to as many messages as I can, time permitting.</p>
-    <p>Take a look at how we can best <a href="/connect">connect</a>.</p>
+<div class="content max-w-md mx-auto text-center">
+    <p>So, if this sounds like your kind of fun, pick a place to start and <strong>dive on in!</strong></p>
 </div>
+
+<div class="uppercase flex justify-between">
+        <a class="no-underline text-xs {{ str_contains($page->_meta->path, "journal") ? "text-grey-darkest" : "text-grey-darker" }} hover:text-grey-darkest" href="/journal">Journal</a>
+        <span class="text-grey text-xs">&bull;</span>
+        <a class="no-underline text-xs {{ str_contains($page->_meta->path, "notes") ? "text-grey-darkest" : "text-grey-darker" }} hover:text-grey-darkest" href="/notes">Notes</a>
+        <span class="text-grey text-xs">&bull;</span>
+        <a class="no-underline text-xs {{ str_contains($page->_meta->path, "articles") ? "text-grey-darkest" : "text-grey-darker" }} hover:text-grey-darkest" href="/articles">Articles</a>
+        <span class="text-grey text-xs">&bull;</span>
+        <a class="no-underline text-xs {{ str_contains($page->_meta->path, "models") ? "text-grey-darkest" : "text-grey-darker" }} hover:text-grey-darkest" href="/models">Models</a>
+        <span class="text-grey text-xs">&bull;</span>
+        <a class="no-underline text-xs {{ str_contains($page->_meta->path, "projects") ? "text-grey-darkest" : "text-grey-darker" }} hover:text-grey-darkest" href="/projects">Projects</a>
+        <span class="text-grey text-xs">&bull;</span>
+        <a class="no-underline text-xs {{ str_contains($page->_meta->path, "connect") ? "text-grey-darkest" : "text-grey-darker" }} hover:text-grey-darkest" href="/connect">Connect</a>
+        <span class="text-grey text-xs">&bull;</span>
+        <a class="no-underline text-xs {{ str_contains($page->_meta->path, "about") ? "text-grey-darkest" : "text-grey-darker" }} hover:text-grey-darkest" href="/about">About</a>
+    </div>
 
 @endsection

@@ -3,7 +3,9 @@
 @section('title', 'Projects')
 
 @section('main-content')
-    <h1>Projects</h1>
+<div class="max-w-md">
+    <h1 class="mb-4">Projects</h1>
+    <p class="leading-normal text-grey-darker mb-8">The vision may not be clear at the start, but I expect over time some of these models will come together nicely. So nicely in fact, that it may inspire the creation of a long-lasting multi-faceted project.</p>
 
     @forelse ($projects->sortBy('-date') as $project)
 
@@ -16,4 +18,5 @@
     @empty
         <p>No projects to show.</p>
     @endforelse
+</div>
 @endsection

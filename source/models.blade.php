@@ -3,7 +3,9 @@
 @section('title', 'Models')
 
 @section('main-content')
-    <h1>Models</h1>
+<div class="max-w-md">
+    <h1 class="mb-4">Models</h1>
+    <p class="leading-normal text-grey-darker mb-8">Models are where we transition from conceptual and written, to functional and physical. This digitization is key to unlocking new growth oppotuntities. My hope is they can be the building blocks for your own projects.</p>
 
     @forelse ($models->sortBy('-date') as $model)
 
@@ -16,4 +18,5 @@
     @empty
         <p>No models to show.</p>
     @endforelse
+</div>
 @endsection

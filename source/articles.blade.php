@@ -3,7 +3,9 @@
 @section('title', 'Articles')
 
 @section('main-content')
-    <h1>Articles</h1>
+<div class="max-w-md">
+    <h1 class="mb-4">Articles</h1>
+    <p class="leading-normal text-grey-darker mb-8">Our random thoughts are starting to click! I'll take some time to explain concepts clearly <span class="italic small">(hopefully)</span>, before creating a tech-enabled version.</p>
 
     @forelse ($articles->sortBy('-date') as $article)
 
@@ -16,4 +18,5 @@
     @empty
         <p>No articles to show.</p>
     @endforelse
+</div>
 @endsection

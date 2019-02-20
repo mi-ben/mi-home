@@ -3,7 +3,9 @@
 @section('title', 'Journal')
 
 @section('main-content')
-    <h1>Journal</h1>
+<div class="max-w-md">
+    <h1 class="mb-4">Journal</h1>
+    <p class="leading-normal text-grey-darker mb-8">You're supposed to <em>begin with the end in mind</em>. Well, I'm no grand chess master that can see 100 steps ahead. So, we will take it one step at a time in the Journal. Here I'll set the goals ahead of us and reflect on the path behind us.</p>
 
     @forelse ($journal->sortBy('-date') as $journal_entry)
 
@@ -16,4 +18,5 @@
     @empty
         <p>No journal entries to show.</p>
     @endforelse
+</div>
 @endsection
